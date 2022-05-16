@@ -1,0 +1,16 @@
+<%- include("partials/header") -%>
+
+
+<h1>Home</h1>
+
+<p> <%=para %> </p>
+
+<% for(let i=0;i<postarray.length;i++){ %>
+    <h2> <%=postarray[i].posttitle  %> </h2>
+    <p> <%=postarray[i].postbody.substring(0,100)%>... <a href="posts/<%=postarray[i].posttitle%>">Read More</a> </p>
+<% } %>
+<!--Instead of using for loop , you can use forEach function to get individual element-->
+
+<%- include("partials/footer") -%>
+
+
