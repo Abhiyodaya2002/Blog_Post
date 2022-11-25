@@ -9,8 +9,8 @@
 <p>The interface of blogs has changed significantly over time. Bloggers can now integrate various widgets and plugins into their platforms, such as a social media feed, a contact form, or an author profile.</p>
 
 <% for(let i=0;i<postarray.length;i++){ %>
-    <h2> <%=postarray[i].posttitle  %> </h2>
-    <p> <%=postarray[i].postbody.substring(0,100)%>... <a href="posts/<%=postarray[i].posttitle%>">Read More</a> </p>
+    <h2> <%=postarray[i].title  %> </h2>
+    <p style=" word-break: break-all; word-wrap: break-word;"><a class="trash" href="/delete/<%=postarray[i]._id%>"><i class='fas fa-trash-alt'></i></a> <%=postarray[i].content.substring(0,100)%>... <a href="posts/<%=postarray[i]._id%>" target="_blank">Read More</a> </p>
 <% } %>
 <!--Instead of using for loop , you can use forEach function to get individual element-->
 

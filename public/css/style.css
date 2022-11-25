@@ -4,11 +4,11 @@
 }
 h2{
     font-family: 'Volkhov', serif;
-    text-shadow: 2px 2px rgb(75, 75, 80);
+    text-shadow: 1.6px 1.6px rgb(75, 75, 80);
 }
 h1{
     font-family: 'Volkhov', serif;
-    text-shadow: 1.8px 1.8px rgb(75, 75, 80);
+    text-shadow: 1.5px 1.5px rgb(75, 75, 80);
 }
 body{
     background-color: rgb(133, 148, 143);
@@ -28,6 +28,8 @@ font-family: 'Volkhov', serif;
     display: inline-block;
 }
 .navbar {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: black;
 color: white;
     font-family: 'Volkhov', serif;
     padding-top: 20px;
@@ -41,7 +43,7 @@ color: white;
 .navbar-brand{
     padding-left:9.2%;
     font-size: 19px;
-    text-shadow: 2px 2px rgb(131, 131, 143);
+    text-shadow: 1.6px 1.6px rgb(131, 131, 143);
 }
 .navbar-nav{
     padding-left :60%;
@@ -69,6 +71,10 @@ p {
   }
   */
   
+  .trash{
+    color:black;
+    padding-right:3px;
+  }
 .footer-padding {
 	padding-bottom: 60px;
 }
